@@ -1,4 +1,4 @@
-# react boilerplate
+# ThoughWorkes-HomeWork
 
 ### Quick start
 To start a new app, run:
