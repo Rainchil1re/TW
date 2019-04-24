@@ -1,0 +1,10 @@
+
+html, body, :global(#root) {
+  height: 100%;
+}
+:global .content-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  /*border: 1px solid;*/
+  overflow: hidden;
+}

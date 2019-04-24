@@ -1,0 +1,236 @@
+@import "../../assets/css/base";
+
+.agent-wrap {
+  float: left;
+}
+
+.info-wrap {
+  overflow: hidden;
+  margin-top: 17px;
+  div {
+    position: relative;
+    float: left;
+    width: 272px;
+    height: 116px;
+    margin-left: 30px;
+    text-align: center;
+    &:first-child {
+      background-color: #FF9A2A;
+    }
+    &:nth-child(2) {
+      background-color: #7FBC39;
+    }
+    &:last-child {
+      background-color: @white;
+    }
+    &.basic-info-box {
+      span {
+        position: absolute;
+        font-family: 'Avenir';
+        color: @white;
+        &:first-child {
+          top: 16px;
+          left: 11px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+        &:last-child {
+          right: 26px;
+          bottom: 0px;
+          font-size: 48px;
+        }
+      }
+      i {
+        font-size: 144px;
+        line-height: 116px;
+        color: @white;
+        opacity: 0.2;
+      }
+    }
+    &.total-info-box {
+      display: flex;
+      p {
+        &:first-child {
+          margin-left: 24px;
+        }
+        margin-left: 48px;
+        span {
+          display: block;
+          &:first-child {
+            margin-top: 20px;
+            font: bold 12px 'Avenir, Helvetica,Arial,sans-ser';
+            color: #34465a;
+          }
+          &:last-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-top: 35px;
+            font: normal 20px 'Avenir, Helvetica,Arial,sans-ser';
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.query-wrap {
+  display: flex;
+  width: 876px;
+  height: 50px;
+  margin-top: 16px;
+  margin-left: 30px;
+  background-color: @white;
+  overflow: hidden;
+  .type-box {
+    display: flex;
+    height: 100%;
+    span {
+      display: block;
+      height: 100%;
+      padding: 0 23px;
+      font: bold 14px 'Avenir, Helvetica,Arial,sans-ser';
+      color: @fontColor;
+      text-align: center;
+      line-height: 50px;
+      border-right: 1px solid #EFEFEF;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover {
+        color: #00B4CF;
+        border-bottom: 3px solid @hoverColor;
+      }
+      &.current {
+        color: #00B4CF;
+        border-bottom: 3px solid @hoverColor;
+      }
+    }
+  }
+  .search-wrap {
+    position: relative;
+    margin-left: 37px;
+    input {
+      width: 172px;
+      height: 30px;
+      margin-top: 10px;
+      background-color: #F3F3F3;
+      text-indent: 27px;
+      box-sizing: border-box;
+      border: none;
+      border-top: 1px solid #E1E4E6;
+      border-left: 1px solid #E1E4E6;
+      outline: none;
+    }
+    i {
+      position: absolute;
+      top: 15px;
+      left: 8px;
+      font-size: 20px;
+      color: #999999;
+    }
+
+  }
+  .arrange-wrap {
+    height: 20px;
+    margin-left: 316px;
+    margin-top: 15px;
+    i {
+      margin-right: 24px;
+      font-size: 20px;
+      color: #4A4A4A;
+      cursor: pointer;
+      &:hover {
+        color: @hoverColor;
+      }
+    }
+    :global {
+      .current {
+        color: @hoverColor;
+      }
+    }
+
+  }
+
+}
+
+.agents-list-wrap{
+  margin:24px 0 0 30px;
+  width:876px;
+  background-color: #fff;
+  padding:10px;
+  li {
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+  }
+  img{
+    display:block;
+    float:left;
+  }
+  .agent-list-info{
+    float:left;
+    margin-left:30px;
+    span{
+      margin-left:10px;
+    }
+
+  }
+
+  .status{
+    display:inline-block;
+    padding:0 5px;
+
+    color:white;
+    ~i{
+      margin-left:30px;
+      font-size:18px;
+      ~span{
+        font-size:16px;
+      }
+    }
+  }
+  .agent-list-info-upper{
+    >i{
+      font-size:16px;
+      vertical-align:text-top;
+      line-height:16px;
+    }
+  }
+  .idle{
+    background-color: #7FBC39;
+  }
+  .building{
+    background-color: #FF9A2A;
+  }
+  .agent-list-info-lower{
+    margin-top:30px;
+  }
+  .plus-wrap{
+    background-color: #00b4cf;
+    padding:3px 6px;
+    color:white;
+
+    display:inline-block;
+    vertical-align:top;
+    font-size:0px;
+    >i{
+      font-size: 16px;
+    }
+  }
+  .os-wrap{
+    display:inline-block;
+    width: 80px;
+    height: 22px;
+    background-color: #EFEFEF;
+    line-height:22px;
+    margin-left:10px;
+    i{
+      margin-left:8px;
+    }
+  }
+
+}
+

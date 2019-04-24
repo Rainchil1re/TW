@@ -1,0 +1,123 @@
+@import "../../assets/css/base";
+.head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: @white;
+  line-height: 70px;
+  text-align: center;
+  -webkit-box-shadow:0px 1px 10px #e2e2e2;
+  -moz-box-shadow:0px 1px 10px #e2e2e2;
+  box-shadow:0px 1px 10px #e2e2e2;
+  .Drop-menu-wrap {
+    position: absolute;
+    right: 120px;
+    height: 100%;
+    &:hover {
+      :global {
+        .icon-angle-down{
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+          transform-origin:center center;
+          -webkit-transition: transform 0.2s;
+          -moz-transition: transform 0.2s;
+          -ms-transition: transform 0.2s;
+          -o-transition: transform 0.2s;
+          transition: transform 0.2s ease;
+        }
+      }
+      ul {
+        display: block;
+      }
+    }
+    .user {
+      float: left;
+      width: 40px;
+      margin-top: 15px;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+    :global {
+      .icon-angle-down {
+        display: block;
+        float: left;
+        margin-top: 25px;
+        margin-left: 20px;
+        font: normal 20px cursive;
+        color: #9b9b9b;
+        vertical-align: middle;
+      }
+      .icon-angle-down,.rotate{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transform-origin:center center;
+        -webkit-transition: transform 0.2s;
+        -moz-transition: transform 0.2s;
+        -ms-transition: transform 0.2s;
+        -o-transition: transform 0.2s;
+        transition: transform 0.2s ease-in-out;
+      }
+      .icon-angle-down,.rotateRecover{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transform-origin:center center;
+        -webkit-transition: transform 0.2s;
+        -moz-transition: transform 0.2s;
+        -ms-transition: transform 0.2s;
+        -o-transition: transform 0.2s;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: -34px;
+      width: 140px;
+      height: 92px;
+      background-color: @white;
+      li {
+        width: 100%;
+        height: 31px;
+        line-height: 31px;
+        text-align: left;
+        background-color: @white;
+        cursor: pointer;
+        &:hover {
+          background-color: #EFEFEF;
+        }
+        &:first-child {
+          margin-top: 15px;
+        }
+        i {
+          padding-left: 14px;
+          vertical-align: middle;
+        }
+        span {
+          margin-left: 12px;
+        }
+      }
+    }
+
+  }
+  img {
+    vertical-align: middle;
+  }
+  .logo {
+    width: 120px;
+    text-align: center;
+  }
+
+}
+
